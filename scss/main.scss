@@ -1,14 +1,5 @@
+@import 'variables';
+@import 'mixins';
 @import 'header';
-
-@font-face {
-    font-family: 'Trajan-Pro-Regular';
-    src: url('Trajan-Pro-Regular.woff') format('woff'),
-        url('Trajan-Pro-Regular.woff2') format('woff2'),
-        url('Trajan-Pro-Regular.eot'),
-        url('Trajan-Pro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Trajan-Pro-Regular.ttf') format('truetype');
-
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import 'footer';
+@import 'home-content';

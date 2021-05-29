@@ -1,0 +1,110 @@
+.gallery {
+    max-width: 100vw;
+
+    @include desktop {
+        max-width: 1200px;
+    }
+
+    .gallery__list {
+        list-style-type: none;
+        position: relative;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include desktop {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+
+        li {
+            cursor: pointer;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:hover .background {
+                background-color: rgba(0, 0, 0, 0.781);
+            }
+
+            &:hover h2 {
+                transform: translateY(0);
+            }
+
+            img {
+                width: 100vw;
+
+            }
+
+            .background {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #00000085;
+                transition: 0.5s ease-in-out all;
+
+
+            }
+
+            h2 {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                transform: translateY(120%);
+                transition: 0.5s ease-in-out all;
+                text-align: center;
+            }
+
+
+
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        .gallery__list {
+            flex-direction: row;
+
+            li {
+                width: 30%;
+                height: 30%;
+
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery {
+        .gallery__list {
+            flex-direction: row;
+
+            li {
+                width: auto;
+                height: 15%;
+
+                img {
+                    width: 17vw;
+                }
+            }
+        }
+    }
+}

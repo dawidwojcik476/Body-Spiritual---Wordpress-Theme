@@ -21,6 +21,11 @@
                 <h1>ARKADIUSZ MAZURKIEWICZ BODY SPIRITUALITY</h1>
             </div>
             <nav class="header__nav">
+                <div class="nav__hamburger">
+                    <p>
+                        Menu
+                    </p> <i class="fas fa-bars"></i>
+                </div>
                 <ul class="nav__list">
                     <li><a href="#">HOME </a></li>
                     <li><a href="#">ABOUT ME</a> </li>
@@ -34,16 +39,22 @@
 
         <section class="gallery">
             <ul class="gallery__list">
-                <li><a href="#"></a>
-                    <img src="" alt="">
+                <li>
+                    <div class="background"></div>
+                    <img src="images/maty.png" alt="Maty do jogi">
+                    <h2>Mats</h2>
                 </li>
-                <li><a href="#"></a>
-                    <p></p>
-                    <img src="" alt="">
+                <li>
+                    <div class="background"></div>
+                    <img src="images/body.png" alt="Galeria Body Spiritual">
+                    <h2>Body Spiritual</h2>
+
                 </li>
-                <li><a href="#"></a>
-                    <p></p>
-                    <img src="" alt="">
+                <li href="#">
+                    <div class="background"></div>
+                    <img src="images/people.png" alt="Ludzie joga">
+                    <h2>People</h2>
+
                 </li>
             </ul>
         </section>
@@ -54,6 +65,8 @@
             <div class="footer__social-icon"> <i class="fab fa-facebook"></i></div>
         </footer>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>

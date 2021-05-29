@@ -1,0 +1,34 @@
+footer.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include desktop {
+        margin-top: 50px;
+    }
+
+    .footer__copyrights {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .footer__social-icon {
+        color: #818a91;
+        font-size: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out all;
+
+        &:hover {
+            color: rgb(69, 69, 165);
+        }
+
+        @include desktop {
+            margin-top: 20px;
+        }
+
+    }
+
+}
