@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Trajan Pro Regular';
+  src: url('/path-to/Trajan Pro Regular.woff2') format('woff2'),
+       url('/path-to/Trajan Pro Regular.woff') format('woff'),
+       url('/path-to/Trajan Pro Regular.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'Trajan Pro Regular', sans-serif;
+}

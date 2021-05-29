@@ -1,0 +1,72 @@
+.body-container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Trajan-Pro-Regular';
+}
+
+
+
+header.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .header__descript {
+        background-color: #f3f3f3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+
+        h1 {
+            font-size: 13px;
+            font-family: 'Trajan Pro Regular', sans-serif;
+            color: rgb(133, 133, 133);
+        }
+    }
+
+    .header__nav {
+        display: flex;
+        border-top: 1px rgb(236, 236, 236) solid;
+        border-bottom: 1px rgb(236, 236, 236) solid;
+        margin-top: 20px;
+
+        .nav__list {
+            display: flex;
+            list-style-type: none;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                margin-right: 30px;
+                cursor: pointer;
+                transition: 0.5s ease-in-out all;
+                border-bottom: 1px solid rgba(255, 255, 0, 0);
+
+                &:hover {
+                    border-bottom: 1px solid yellow;
+
+                }
+
+                a {
+                    color: #797979;
+                    text-decoration: none;
+                    transition: 0.5s ease-in-out all;
+                    font-family: 'Trajan Pro Regular', sans-serif;
+                    font-size: 13px;
+
+                    &:hover {
+                        color: #464646;
+
+
+                    }
+                }
+
+            }
+        }
+    }
+}
