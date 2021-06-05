@@ -12,7 +12,9 @@
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
-    font-family: $mainFont;
+    font-family: 'trajan-pro-regular',
+        sans-serif;
+
 
     @include desktop {
         max-width: 1200px;
@@ -40,7 +42,9 @@ header.header {
 
         h1 {
             font-size: 13px;
-            font-family: $mainFont;
+            font-family: 'trajan-pro-regular',
+                sans-serif;
+            ;
             color: rgb(133, 133, 133);
             text-align: center;
         }
@@ -143,9 +147,11 @@ header.header {
                     color: #797979;
                     text-decoration: none;
                     transition: 0.5s ease-in-out all;
-                    font-family: 'Trajan Pro Regular', sans-serif;
+                    font-family: 'trajan-pro-regular',
+                        sans-serif;
                     font-size: 14px;
                     border-bottom: 1px solid rgba(255, 255, 0, 0);
+                    text-transform: uppercase;
 
                     &:hover {
                         color: #464646;
